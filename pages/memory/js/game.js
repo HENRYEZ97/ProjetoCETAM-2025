@@ -9,7 +9,7 @@ let secondcard = null;
 let loop = null;
 
 matchSound.volume = 0.5;
-gameSound.volume = 0.45;
+gameSound.volume = 0.25;
 
 const characters = [
     'carro', 
@@ -103,7 +103,7 @@ const createCard = (character) => {
     const front = createElement('div', 'face front');
     const back = createElement('div', 'face back');
 
-    front.style.backgroundImage = `url('images/${character}.png')`;
+    front.style.backgroundImage = `url('../images/${character}.png')`;
 
     card.appendChild(front);
     card.appendChild(back);
@@ -243,4 +243,3 @@ window.onload = () => {
     const resetButton = document.getElementById('reset-button');
     resetButton.addEventListener('click', resetRanking);
 }
-

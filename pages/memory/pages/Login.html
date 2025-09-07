@@ -3,21 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/login.css">
-<link rel="shortcut icon" href="images/cerebro.ico" type="image/x-icon">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/login.css">
+<link rel="shortcut icon" href="../images/cerebro.ico" type="image/x-icon">
 <title>Jogo da Memória - Login</title>
 </head>
 <body>
+    <button class="btn-voltar" onclick="history.back()">Voltar</button>
     <video autoplay loop muted id="bg-video">
-        <source src="videos/fundo.mp4" type="video/mp4">
+        <source src="../videos/fundo.mp4" type="video/mp4">
     </video>
-
-    <nav class="btn-inicial">
-        <ul>
-            <a href="/index.html"><button class="btn-inicial">Página Inicial</button></a>
-        </ul>
-    </nav>
 
     <div class="login-container">
         <div class="login-box">
@@ -70,7 +65,7 @@ window.addEventListener("DOMContentLoaded", carregarRankingPontos);
 </div>
  <footer class="site-footer">
         <div class="footer-content">
-             <img src="images/fametro.jpg" alt="Logotipo" class="footer-logo">
+             <img src="../images/fametro.jpg" alt="Logotipo" class="footer-logo">
             <p>&copy; 2025 SISTEMAS DE INFORMAÇÃO | Todos os direitos reservados</p>
         </div>
     </footer>

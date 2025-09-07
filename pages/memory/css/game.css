@@ -39,11 +39,13 @@ video {
 
 /* ===== Header ===== */
 .header {
+    justify-content: center;
     text-align: center;
     background-color: #c7c8ca;
-    padding: 20px 10px;
-    border-radius: 10px;
+    padding: 20px 5px;
+    border-radius: 15px;
 }  
+
 .timer {
     position: fixed; 
     top: 20px; 
@@ -163,25 +165,23 @@ th, td {
 }
 
 .btn-voltar {
-  background-color: dodgerblue; /* Cor de fundo */
-  color: white; /* Cor do texto */
+  background-color: #f2f3f4; /* Cor de fundo */
+  color: rgb(0, 0, 0); /* Cor do texto */
   padding: 10px 20px; /* Espaçamento interno */
   border: none; /* Remove borda padrão */
-  border-radius: 16px; /* Cantos arredondados */
+  border-radius: 8px; /* Cantos arredondados */
   font-size: 16px; /* Tamanho da fonte */
   font-weight: bold; /* Texto em negrito */
   cursor: pointer; /* Mãozinha ao passar */
   transition: all 0.3s ease; /* Animação suave */
-  position: fixed; 
-  top: 20px;  
-  left: 20px;
-  z-index: 1;
-  width: 150px;
-  height: 55px;
+    position: fixed; 
+    top: 20px;  
+    left: 20px;
+    z-index: 1;
 }
 
 .btn-voltar:hover {
-  background-color: rgb(40, 87, 87);
+  background-color: #df8301; /* Cor ao passar o mouse */
   transform: scale(1.05); /* Leve aumento */
 }
 
