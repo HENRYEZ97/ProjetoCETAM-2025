@@ -35,6 +35,40 @@ document.addEventListener("DOMContentLoaded", () => {
   ],
 };
 
+//NOVA FUNÇÃO ADICIONADA DE CONFETTI
+function soltarConfete() {
+  const colors = ['#ff0a54',
+                  '#ff477e',
+                  '#ff7096',
+                  '#ff85a1',
+                  '#fbb1b1',
+                  '#f9bec7'];
+  const confeteCount = 500;
+  for (let i = 0; i< confeteCount; i++) {
+  const confete = document.createElement('div');
+
+  confete.classList.add('confete');
+          confete.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+          confete.style.left = Math.random() * window.innerWidth + 'px';
+          confete.style.animationDuration = (Math.random() * 3+2)+'s';
+          confete.style.opacity = Math.random();
+          document.body.appendChild(confete);
+          setTimeout(() => {
+            confete.remove();
+          }, 5000);
+  }
+}
+//NOVA FUNÇÃO ADICIONADA DE CONFETTI
+
+//COMPLEMENTO
+window.clicarComConfete = function(url) {
+  soltarConfete();
+  setTimeout(() => {
+    window.location.href = url;
+  }, 700);
+  }
+  //COMPLEMENTO
+
   let audioAtual = null;
   let timeoutAudio = null;
   let canPlay = true;

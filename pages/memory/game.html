@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/game.css">
+    <script defer src="game.js"></script>
+    <link rel="shortcut icon" href="images/cerebro.ico" type="image/x-icon">
+    <title>Jogo da Memória</title>
+</head>
+<body>
+    <button class="btn-voltar" onclick="history.back()">Voltar</button>
+
+    <video id="video" autoplay loop muted>
+        <source src="videos/deep.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <header class="header">
+            <h1>SEJA BEM VINDO</h1>
+            <div class="name" aria-label="Nome do jogador"></div>
+        </header>
+
+        <main>
+            <div class="grid" aria-label="Área do jogo da memória"></div>
+        </main>
+    </div>
+
+    <!--<aside class="ranking-container">
+        <h2>Ranking</h2>
+        <div id="ranking" aria-label="Tabela de ranking"></div>
+        <button id="reset-button" aria-label="Botão para resetar ranking">Reset ranking</button>
+    </aside>-->
+
+    <audio id="match-sound" aria-hidden="true">
+        <source src="audios/match-sound.mp3" type="audio/mp3">
+    </audio>
+    <audio id="game-sound" aria-hidden="true">
+        <source src="audios/game-sound.mp3" type="audio/mp3">
+    </audio>
+
+    <span class="timer" aria-label="Tempo restante">0</span>
+</body>
+</html>

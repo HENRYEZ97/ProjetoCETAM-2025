@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/login.css">
+<link rel="shortcut icon" href="images/cerebro.ico" type="image/x-icon">
+<title>Jogo da Memória - Login</title>
+</head>
+<body>
+    <video autoplay loop muted id="bg-video">
+        <source src="videos/fundo.mp4" type="video/mp4">
+    </video>
+
+    <nav class="btn-inicial">
+        <ul>
+            <a href="/index.html"><button class="btn-inicial">Página Inicial</button></a>
+        </ul>
+    </nav>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h1 class="titulo-container">Jogo da Memória</h1>
+            <input type="text" id="player-name" placeholder="Digite seu nome">
+            <h2>ESCOLHA O NÍVEL:</h2>
+            <div class="buttons">
+                <button class="login-button" onclick="startGame('facil')">Fácil</button>
+                <button class="login-button" onclick="startGame('medio')">Médio</button>
+                <button class="login-button" onclick="startGame('dificil')">Difícil</button>
+            </div>
+        </div>
+    </div>
+
+    <!--ranking de pontos-->
+<div class="scoreboard">
+    <h2>🏆 Ranking de Pontos</h2>
+    <table id="ranking-table">
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Jogador</th>
+                <th>Pontos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--carregar o ranking-->
+           <script>
+function carregarRankingPontos() {
+    let ranking = JSON.parse(localStorage.getItem("pontuacaoRanking")) || [];
+    let tbody = document.querySelector("#ranking-table tbody");
+
+    tbody.innerHTML = ""; // limpa antes de preencher
+
+   ranking.slice(0, 10).forEach((jogador, index) => {
+    let row = document.createElement("tr");
+    row.innerHTML = `
+        <td>${index + 1}</td>
+        <td>${jogador.nome}</td>
+        <td>${jogador.pontos}</td>
+    `;
+    tbody.appendChild(row);
+});
+}
+window.addEventListener("DOMContentLoaded", carregarRankingPontos);
+</script>
+
+        </tbody>
+    </table>
+</div>
+ <footer class="site-footer">
+        <div class="footer-content">
+             <img src="images/fametro.jpg" alt="Logotipo" class="footer-logo">
+            <p>&copy; 2025 SISTEMAS DE INFORMAÇÃO | Todos os direitos reservados</p>
+        </div>
+    </footer>
+<script>
+function startGame(nivel) {
+    const name = document.getElementById('player-name').value.trim();
+    if (!name) {
+        alert('Por favor, digite seu nome!');
+        return;
+    }
+    window.location.href = `game.html?name=${encodeURIComponent(name)}&nivel=${nivel}`;
+}
+</script>
+</body>
+</html>

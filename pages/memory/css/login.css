@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f8;
+}
+
+nav button {
+    background-color: dodgerblue;
+    width: 150px;
+    height: 55px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin: 20px 20px;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+nav button:hover {
+    cursor: pointer;
+    background-color: rgb(40, 87, 87);
+    color: white;
+    transform: scale(1.1);
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que o vídeo preencha a tela mantendo sua proporção */
+    z-index: -1; /* Coloca o vídeo atrás de todo o conteúdo */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: rgba(20, 20, 30, 0.9);
+    padding: 40px 50px;
+    border-radius: 15px;
+    text-align: center;
+    color: #e0f7fa;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.login-box h1 {
+  font-size: 2em;
+    margin-bottom: 20px;
+    color: #67c19b;
+
+    /* Preparação pro efeito */
+    display: inline-block;         /* importante para width funcionar certinho */
+    white-space: nowrap;           /* não quebra linha */
+    overflow: hidden;              /* esconde o texto "extra" */
+    border-right: 3px solid #67c19b; /* cursor */
+
+    animation: 
+      typing 2.5s steps(30, end) forwards, /* steps = qtde de "toques" */
+      blink 0.8s step-end infinite;
+      display: inline-block;
+}
+@keyframes typing {
+  from { width: 0; }
+  to   { width: max-content; } /* calcula automático pelo conteúdo */
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.login-box input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #4DA6FF;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.88);
+    color: #67c19b;
+    transition: transform 0.25s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover: cresce suavemente e brilha */
+.login-box input:hover {
+    transform: scale(1.05);
+    border-color: #ff0000;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.7);
+}
+
+/* Clique: efeito realista de "apertar" */
+.login-box input:active,
+.login-box input:focus {
+    transform: scale(0.97);
+    border-color: #FFD93D;
+    box-shadow: 0 0 16px rgba(255, 217, 61, 0.9);
+    outline: none;
+}
+
+
+.login-box h2 {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.login-button {
+    padding: 14px 28px;
+    font-size: 16px;
+    color: #000000d3;
+    background-color: #F0F4F8;
+    border: 2px solid #4DA6FF;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s, background-color 0.5s, box-shadow 0.5s;
+}
+/* Hover: cresce suavemente e brilha */
+.login-button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #4DA6FF, #4DA6FF);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Clique: efeito realista de "apertar" */
+.login-button:active {
+    transform: scale(0.92);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.container {
+  width: 90%;  /* ocupa 90% da largura da tela */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card {
+  flex: 1 1 300px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+}
+
+/* Placa fixa no canto superior direito */
+.scoreboard {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    max-height: 70vh;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 12px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    z-index: 1000;
+    transition: transform 0.25s ease, box-shadow 0.3s ease, background 0.4s ease;
+}
+
+/* Hover: cresce e brilha */
+.scoreboard:hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.95);
+    box-shadow: 0 8px 24px rgba(255, 204, 0, 0.5); /* leve brilho dourado */
+}
+
+/* Cabeçalho da placa */
+.scoreboard h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #FFD93D;
+}
+
+/* Tabela */
+#ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#ranking-table th, #ranking-table td {
+    padding: 6px 4px;
+    border-bottom: 1px solid #4DA6FF;
+    font-size: 14px;
+}
+
+#ranking-table th {
+    color:#FFD93D;
+    font-weight: bold;
+}
+
+#ranking-table td {
+    color: #ffffff;
+}
+
+/* Certifique-se de que o rodapé tem position: relative para que a imagem possa ser posicionada */
+.site-footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed; /* O rodapé precisa ser 'relative' ou 'fixed' */
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    /* Adicione padding-left para dar espaço à imagem */
+    padding-left: 60px; /* Ajuste este valor conforme o tamanho da imagem */
+}
+
+/* Estilos para a imagem no rodapé */
+.footer-logo {
+    height: 47px; /* Define a altura da imagem. A largura será ajustada automaticamente. */
+    position: absolute; /* Permite posicionar a imagem de forma precisa */
+    left: 0px; /* Alinha a imagem a 15px da borda esquerda do rodapé */
+    top: 50%; /* Alinha o topo da imagem no meio verticalmente */
+    transform: translateY(-50%); /* Ajusta a imagem para que seu centro fique alinhado */
+}
+

@@ -12,6 +12,14 @@
     color: #EFEFEF
     
 }
+@media(max-width: 768){
+    .card-texto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
 .card{
     overflow: hidden;
     position: relative;
@@ -23,6 +31,16 @@
     background-size: cover;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media(max-width: 768px){
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 25%;
+        max-width: 100%;
+    }
 }
 
 .card:hover {
@@ -36,12 +54,30 @@
     padding: 40px 0;
     gap: 20px;
 }
+@media(max-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+}
 .row {
     display: flex;
     gap: 20px;
 }
 .row-top{
     justify-content: center;
+}
+@media(max-width: 768px){
+    .row-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
 }
 .row-bottom{
     justify-content: center;

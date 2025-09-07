@@ -3,12 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PROJETO-CETAM</title>
+    <title>PROJETO - FAMETRO</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/categorias.css" />
     <link rel="stylesheet" href="styles/card.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   </head>
+
+
+  <!--Nova edição-->
+  <nav>
+    <h2>EXTENSÃO</h2>
+      <ul>
+          <button class="btn-nav" onclick="clicarComConfete('index.html')">Início</button>
+          <button class="btn-nav" onclick="clicarComConfete('Sobre.html')">Sobre</button>
+          <button class="btn-nav" onclick="clicarComConfete('pages/memory/Login.html')">Jogos</button>
+      </ul>
+  </nav>
+<!--Nova edição-->
+
   <body style="height: min-content;">
     <div class="title-wrapper">
     <h1 class="title">Ouvi Ver</h1>
@@ -23,6 +36,9 @@
     </main>
 
     <footer class="site-footer">
+      <div class="logo">
+        <img src="/assets/imagens/fametro.png" width="150px">
+      </div>
       <p>&copy; 2025 Joguinho Kids. Todos os direitos reservados.</p>
       <p>
         <a href="/sobre-nos">Sobre Nós</a> | <a href="/contato">Contato</a> |
@@ -35,6 +51,6 @@
       </p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>
