@@ -28,6 +28,8 @@ nav{
     align-items: center;
     text-align: center;
     width: 100%;
+    max-width: 100%;
+    flex-direction: column;
   }
 }
 .btn-nav {
@@ -68,11 +70,12 @@ nav{
 
 @media(max-width: 768px){
   .btn-nav {
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 10px;
+  margin-top: 15px;
+  width: 100%;
   }
 }
 .btn-nav:hover {
@@ -100,6 +103,10 @@ nav h2 {
   white-space: nowrap;
   overflow: hidden;
   border-right: 4px solid #EFEFEF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   }
 }
 
@@ -119,6 +126,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
   }
 }
 
