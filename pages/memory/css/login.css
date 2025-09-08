@@ -4,29 +4,6 @@ body {
     background: #fff8f8;
 }
 
-nav button {
-    background-color: dodgerblue;
-    width: 150px;
-    height: 55px;
-    border-radius: 16px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-    margin: 20px 20px;
-    color: whitesmoke;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 18px;
-    transition: transform 0.3s ease;
-}
-nav button:hover {
-    cursor: pointer;
-    background-color: rgb(40, 87, 87);
-    color: white;
-    transform: scale(1.1);
-}
-
 #bg-video {
     position: fixed;
     top: 0;
@@ -73,7 +50,7 @@ nav button:hover {
 }
 @keyframes typing {
   from { width: 0; }
-  to   { width: max-content; } /* calcula automático pelo conteúdo */
+  to   { width: 15ch; } /* calcula automático pelo conteúdo */
 }
 
 @keyframes blink {
@@ -117,8 +94,8 @@ nav button:hover {
 .buttons {
     display: flex;
     justify-content: space-around;
-    gap: 10px;
-    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .login-button {
@@ -231,7 +208,6 @@ nav button:hover {
     z-index: 1000;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     /* Adicione padding-left para dar espaço à imagem */
-    padding-left: 60px; /* Ajuste este valor conforme o tamanho da imagem */
 }
 
 /* Estilos para a imagem no rodapé */
@@ -242,4 +218,30 @@ nav button:hover {
     top: 50%; /* Alinha o topo da imagem no meio verticalmente */
     transform: translateY(-50%); /* Ajusta a imagem para que seu centro fique alinhado */
 }
+.btn-voltar {
+  background-color: #f2f3f4; /* Cor de fundo */
+  color: rgb(0, 0, 0); /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* Remove borda padrão */
+  border-radius: 8px; /* Cantos arredondados */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  cursor: pointer; /* Mãozinha ao passar */
+  transition: all 0.3s ease; /* Animação suave */
+    position: fixed; 
+    top: 20px;  
+    left: 20px;
+    z-index: 1;
+}
+
+.btn-voltar:hover {
+  background-color: #df8301; /* Cor ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento */
+}
+
+.btn-voltar:active {
+  background-color: #0099ff; /* Cor ao clicar */
+  transform: scale(0.95); /* Aperta o botão */
+}
+
 
