@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.iniciar-jogo{
+  font-family: "Press Start 2P", system-ui;
+}
+
 /* ===== Body e Container ===== */
 body {
     display: flex;
@@ -12,34 +24,6 @@ body {
     text-align: center;
 }
 
-nav {
-    position: absolute;  
-    top: 20px;           
-    left: 20px;          
-}
-/* ===== Navegação e Botões ===== */
-nav button {
-    background-color: #f2f3f4; /* Cor de fundo */
-    color: rgb(0, 0, 0); /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno */
-    border: none; /* Remove borda padrão */
-    border-radius: 8px; /* Cantos arredondados */
-    font-size: 16px; /* Tamanho da fonte */
-    font-weight: bold; /* Texto em negrito */
-    cursor: pointer; /* Mãozinha ao passar */
-    transition: all 0.3s ease; /* Animação suave */
-    position: fixed; 
-    top: 20px;  
-    left: 20px;
-    z-index: 1;
-}
-
-nav button:hover {
-  background-color: #df8301; /* Cor ao passar o mouse */
-  transform: scale(1.05); /* Leve aumento */
-  cursor: pointer;
-}
-
 
 .container {
     flex: 1;
@@ -47,6 +31,8 @@ nav button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
 }
 
 
@@ -61,12 +47,6 @@ button {
     border: 2px solid #4DA6FF;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     transition: all 0.3s ease;
-}
-
-button:hover {
-    transform: scale(1.08);
-    background: linear-gradient(135deg, #4DA6FF, #4DA6FF);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
 /* ===== Vídeo de Fundo ===== */
@@ -88,13 +68,13 @@ button:hover {
     justify-content: center;
     text-align: center;
     color: #e0f7fa;
-    width: 90%;
-    max-width: 300px;
+    width: 500px;
+    height: 250px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    margin-top: 150px;
 }
 
 /* ===== Título com animação ===== */
@@ -106,40 +86,153 @@ h1 {
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid #67c19b;
-    animation: 
-        typing 2.5s steps(30, end) forwards,
-        blink 0.8s step-end infinite;
 }
 
-@keyframes typing {
-    from { width: 0; }
-    to   { width: 15ch; }
+
+
+/*Nova alteração feita no navbar*/
+nav{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-top: 10px 10px;
+  padding: 1.5rem 1.5rem;
+  background: #ef9651;
+  color: white;
+  width: 100%;
+  box-shadow: 4px 8px 1000px rgba(0, 0, 0, 0.9);
+  
+}
+.btn-nav {
+  width: 115px;
+  height: 45px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 10px;
+  border-color: white;
+  box-shadow: 8px 8px 4px rgba(39, 39, 39, 0.9);
+  font-size: 19px;
+  transition: transform 0.3s ease;
+  margin: 0.2rem;
+  font-weight: bold;
+  color: #444444;
+  font-weight: 600;
+  background-color: #EFEFEF;
+  align-items: center;
+  text-align: center;
+  margin-top: 35px;
 }
 
-@keyframes blink {
-    50% { border-color: transparent; }
+.btn-nav:hover {
+  background-color: #3F7D58;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 4px 8px 10px rgba(70, 70, 70, 0.9);
+}
+nav h2 {
+  font-weight: bold;
+  font-family: "Fredoka", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #EFEFEF;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #EFEFEF;
+}
+@media(max-width: 768px) {
+  nav h2 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #EFEFEF;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #EFEFEF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
 }
 
-/* ===== Rodapé ===== */
-.site-footer {
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 0px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+
+
+@media(max-width: 768px) {
+  body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    text-align: center;
+    width: 100%;
+  }
 }
 
-.footer-logo {
-    height: 100%;
-    position: absolute;
-    left: 0px;
+.title {
+  font-family: "Fredoka", sans-serif;
+  font-size: 7rem;
+  font-weight: 800;
+  color: #EFEFEF;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #EFEFEF;
+  width: 0ch;
+  display: inline-block;
 }
+
+@media(max-width: 768px){
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Hover no título */
+.title:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Rodapé (footer) */
+.site-footer {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: white;
+  background-color: #EF9651;
+  font-size: 1.2rem;
+  margin-top: auto; /* Empurra o footer para o final */
+  width: 100%;
+}
+.site-footer p {
+  margin: 10px 0;
+  font-family: "Fredoka", sans-serif;
+}
+
+.site-footer a {
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+@media(max-width: 768){
+  .site-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+button:hover,
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+

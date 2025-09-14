@@ -1,9 +1,8 @@
-/* ===== Reset & Global Styles ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: "Press Start 2P", system-ui;
 }
 
 body {
@@ -22,6 +21,7 @@ h1 {
     justify-content: center;
     align-items: flex-start;
     overflow-x: hidden;
+    margin-bottom: 50px;
 }
 
 /* ===== Background Video ===== */
@@ -41,9 +41,13 @@ video {
 .header {
     justify-content: center;
     text-align: center;
-    background-color: #c7c8ca;
+    background-color: rgba(0, 0, 0, 0.486);
     padding: 20px 5px;
     border-radius: 15px;
+    margin-top: 5rem;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.9);
+    color: white;
+    width: 100%;
 }  
 
 .timer {
@@ -174,15 +178,16 @@ th, td {
   font-weight: bold; /* Texto em negrito */
   cursor: pointer; /* Mãozinha ao passar */
   transition: all 0.3s ease; /* Animação suave */
-    position: fixed; 
-    top: 20px;  
-    left: 20px;
-    z-index: 1;
+  position: fixed; 
+  top: 20px;  
+  left: 20px;
+  z-index: 1;
 }
 
 .btn-voltar:hover {
-  background-color: #df8301; /* Cor ao passar o mouse */
+  background-color: dodgerblue; /* Cor ao passar o mouse */
   transform: scale(1.05); /* Leve aumento */
+  color: white;
 }
 
 .btn-voltar:active {

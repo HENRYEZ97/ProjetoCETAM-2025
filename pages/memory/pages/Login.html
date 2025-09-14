@@ -7,9 +7,16 @@
 <link rel="stylesheet" href="../css/login.css">
 <link rel="shortcut icon" href="../images/cerebro.ico" type="image/x-icon">
 <title>Jogo da Memória - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button class="btn-voltar" onclick="history.back()">Voltar</button>
+    <!--Nova edição-->
+  <nav>
+    <a href="/index.html"><img src="/assets/imagens/sistemas.png" width="250px"></a>
+  </nav>
+<!--Nova edição-->
     <video autoplay loop muted id="bg-video">
         <source src="../videos/fundo.mp4" type="video/mp4">
     </video>
@@ -23,7 +30,8 @@
                 <button class="login-button" onclick="startGame('facil')">Fácil</button>
                 <button class="login-button" onclick="startGame('medio')">Médio</button>
                 <button class="login-button" onclick="startGame('dificil')">Difícil</button>
-            </div>
+            </div><br />
+            <a href="/pages/memory/JogoDaMemoria.html"><button class="login-button">Voltar</button></a>  <!--NOVO BOTÃO ADICOONADO PARA RETORNO DA PÁGINA INICIAL DO JOGO-->
         </div>
     </div>
 
@@ -63,12 +71,21 @@ window.addEventListener("DOMContentLoaded", carregarRankingPontos);
         </tbody>
     </table>
 </div>
+
+
  <footer class="site-footer">
-        <div class="footer-content">
-             <img src="../images/fametro.jpg" alt="Logotipo" class="footer-logo">
-            <p>&copy; 2025 SISTEMAS DE INFORMAÇÃO | Todos os direitos reservados</p>
-        </div>
+      <div class="logo">
+        <img src="/assets/imagens/fametro.png" width="150px">
+      </div>
+      <p>
+        <a href="https://facebook.com" target="_blank" rel="external"><img src="/assets/imagens/facebook (2).png" width="3%"></a>
+        <a href="https://instagram.com" target="_blank" rel="external"><img src="/assets/imagens/instagram.png" width="3%"></a>
+      </p><br />
+
+      <p class="copy">&copy; 2025 Joguinho Kids. Todos os direitos reservados.</p>
     </footer>
+
+
 <script>
 function startGame(nivel) {
     const name = document.getElementById('player-name').value.trim();

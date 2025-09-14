@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
 
 /*Nova alteração feita no navbar*/
@@ -50,23 +50,9 @@ nav{
   align-items: center;
   text-align: center;
   background-color: #EFEFEF;
+  margin-top: 35px;
 }
 
-.confete {
-  position: fixed;
-  width: 8px;
-  height: 8px;
-  top: 0;
-  z-index: 9999;
-  border-radius: 50%;
-  pointer-events: none;
-  animation-name: cair;
-  animation-timing-function: linear;
-}
-@keyframes cair {
-  0% { transform: translateY(0) rotate(0deg);}
-  100% { transform: translateY(100vh) rotate(360deg); }
-}
 
 @media(max-width: 768px){
   .btn-nav {
@@ -150,10 +136,7 @@ body {
   font-weight: 800;
   color: #EFEFEF;
   white-space: nowrap;
-  overflow: hidden;
   border-right: 4px solid #EFEFEF;
-  width: 0ch;
-  animation: typing 1.2s steps(30, end) forwards, blink 1s step-end infinite;
   display: inline-block;
 }
 
@@ -210,6 +193,7 @@ body {
 
 .site-footer p {
   margin: 10px 0;
+  font-family: "Fredoka", sans-serif;
 }
 
 .site-footer a {
@@ -218,11 +202,8 @@ body {
   margin: 0 10px;
 }
 
-.site-footer a[href*="sobre"] { color: #ff5722; }
-.site-footer a[href*="contato"] { color: #4caf50; }
-.site-footer a[href*="privacidade"] { color: #2196f3; }
-.site-footer a[href*="facebook"] { color: #3b5998; }
-.site-footer a[href*="instagram"] { color: #e1306c; }
+.site-footer a[href*="facebook"] { color: #fff; }
+.site-footer a[href*="instagram"] { color: #fff; }
 
 button:hover,
 .card:hover {

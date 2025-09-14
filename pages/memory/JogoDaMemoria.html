@@ -4,29 +4,51 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/telaInicial.css">
   <title>Jogo da Memória</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  
   <video autoplay loop muted id="bg-video">
     <source src="./videos/fundo.mp4" type="video/mp4">
   </video>
 
-  <nav class="btn-inicial">
-        <ul>
-            <a href="../../index.html"><button class="btn-inicial">Página Inicial</button></a>
-        </ul>
-    </nav>
+  <!--Nova edição-->
+  <nav>
+    <a href="/index.html"><img src="/assets/imagens/sistemas.png" width="248px"></a>
+      <ul>
+          <a href="/index.html"><button class="btn-nav">Início</button></a>
+          <a href="/Sobre.html"><button class="btn-nav">Sobre</button></a>
+          <a href="JogoDaMemoria.html"><button class="btn-nav">Jogos</button></a>
+      </ul>
+  </nav>
+<!--Nova edição-->
 
   <!-- Caixa centralizada para destacar sobre o fundo -->
   <div class="overlay-box">
     <div class="container">
       <h1>Jogo da Memória</h1>
-      <button onclick="window.location.href='./pages/Login.html'">Iniciar Jogo</button>
+      <button class="iniciar-jogo" onclick="window.location.href='./pages/Login.html'">Iniciar Jogo</button>
     </div>
   </div>
 
   <footer class="site-footer">
-    <img src="./images/fametro.jpg" alt="Logotipo" class="footer-logo">
-    <p>&copy; 2025 SISTEMAS DE INFORMAÇÃO | Todos os direitos reservados</p>
-  </footer>
+      <div class="logo">
+        <img src="/assets/imagens/fametro.png" width="150px">
+      </div>
+
+
+      <p>
+        <a href="https://facebook.com" target="_blank" rel="external"><img src="/assets/imagens/facebook (2).png" width="3%"></a>
+        <a href="https://instagram.com" target="_blank" rel="external"><img src="/assets/imagens/instagram.png" width="3%"></a>
+      </p><br />
+
+       <p>&copy; 2025 Joguinho Kids. Todos os direitos reservados.</p>
+
+    </footer>
+
+  
 </body>
 </html>
