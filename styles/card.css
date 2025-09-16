@@ -118,3 +118,26 @@
 .cardBrilhando {
   animation: brilhoEstrela 3s ease;
 }
+
+/*RESPONSIVIDADE CONTAINER-SONS - 768PX*/
+@media(max-width: 768px) {
+  .containerSons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+/*RESPONSIVIDADE CONTAINER-SONS - 1200PX*/
+@media(max-width: 1200px) {
+  .containerSons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    
+  }
+}
