@@ -141,3 +141,26 @@
     
   }
 }
+
+/*RESPONSIVIDADE CONTAINER-SONS - 1024PX*/
+@media(max-width: 1024px) {
+  .containerSons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+/*RESPONSIVIDADE CONTAINER-SONS - 1024PX*/
+@media(max-width: 1024px) {
+  .containerSons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    
+  }
+}

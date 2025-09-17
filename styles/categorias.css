@@ -73,6 +73,8 @@
 .row-top{
     justify-content: center;
 }
+
+/*RESPONSIVIDADE 768PX*/
 @media(max-width: 768px){
     .row-top {
         display: flex;
@@ -93,7 +95,55 @@
     }
 }
 
+/*RESPONSIVIDADE 1200PX*/
 @media(max-width: 1200px){
+    .row-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .row-bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+.row-bottom{
+    justify-content: center;
+}
+
+.card :hover {
+    animation: backwards;
+}
+
+/*RESPONSIVIDADE 1024PX*/
+@media(max-width: 1024px){
+    .row-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .row-bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 1024px){
     .row-top {
         display: flex;
         justify-content: center;

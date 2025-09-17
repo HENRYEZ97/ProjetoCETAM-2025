@@ -213,6 +213,31 @@ button:hover,
   }
 }
 
+/*RESPONSIVIDADE TELA INICIAL - NAVBAR - 1024px*/
+@media(max-width: 1024px) {
+  nav .logo {
+    width: 400px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  nav ul .btn-nav {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .icone {
+    width: 50px;
+  }
+}
+
 /*RESPONSIVIDADE TELA INICIAL - NAVBAR - 1200px*/
 @media(max-width: 1200px) {
   nav .logo {
