@@ -128,6 +128,7 @@
     text-align: center;
     width: 100%;
     flex-direction: column;
+    max-width: 100%;
   }
 }
 /*RESPONSIVIDADE CONTAINER-SONS - 1200PX*/
@@ -138,6 +139,7 @@
     align-items: center;
     text-align: center;
     width: 100%;
+    max-width: 100%;
     
   }
 }
@@ -151,6 +153,7 @@
     text-align: center;
     width: 100%;
     flex-direction: column;
+    max-width: 100%;
   }
 }
 /*RESPONSIVIDADE CONTAINER-SONS - 1024PX*/
@@ -161,6 +164,7 @@
     align-items: center;
     text-align: center;
     width: 100%;
+    max-width: 100%;
     
   }
 }

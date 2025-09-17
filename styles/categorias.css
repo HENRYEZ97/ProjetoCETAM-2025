@@ -83,6 +83,7 @@
         text-align: center;
         width: 100%;
         flex-direction: column;
+        max-width: 100%;
     }
     .row-bottom{
         display: flex;
@@ -104,6 +105,7 @@
         text-align: center;
         width: 100%;
         flex-direction: column;
+        max-width: 100%;
     }
     .row-bottom{
         display: flex;
@@ -112,6 +114,7 @@
         text-align: center;
         width: 100%;
         flex-direction: column;
+        max-width: 100%;
     }
 }
 .row-bottom{
@@ -131,6 +134,7 @@
         text-align: center;
         width: 100%;
         flex-direction: column;
+        max-width: 100%;
     }
     .row-bottom{
         display: flex;
@@ -151,6 +155,7 @@
         text-align: center;
         width: 100%;
         flex-direction: column;
+        max-width: 100%;
     }
     .row-bottom{
         display: flex;
@@ -159,6 +164,7 @@
         text-align: center;
         width: 100%;
         flex-direction: column;
+        max-width: 100%;
     }
 }
 .row-bottom{

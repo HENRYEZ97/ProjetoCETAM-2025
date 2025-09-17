@@ -177,6 +177,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    max-width: 100%;
   }
   nav ul .btn-nav {
     flex-direction: column;
@@ -184,6 +185,7 @@
     text-align: center;
     align-items: center;
     width: 100%;
+    max-width: 100%;
   }
   .icone {
     width: 50px;
@@ -202,6 +204,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    max-width: 100%;
   }
   nav ul .btn-nav {
     flex-direction: column;
@@ -209,6 +212,7 @@
     text-align: center;
     align-items: center;
     width: 100%;
+    max-width: 100%;
   }
   .icone {
     width: 50px;
