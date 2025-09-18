@@ -13,30 +13,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!--Nova edição-->
   <nav>
     <a href="/index.html"><img src="/assets/imagens/sistemas.png" width="250px"></a>
+    <ul>
+        <a href="/index.html"><button class="btn-nav">Início</button></a>
+        <a href="/Sobre.html"><button class="btn-nav">Sobre</button></a>
+        <a href="/pages/memory/JogoDaMemoria.html"><button class="btn-nav">Jogos</button></a>
+    </ul>
   </nav>
 <!--Nova edição-->
+
     <video autoplay loop muted id="bg-video">
         <source src="../videos/fundo.mp4" type="video/mp4">
     </video>
 
-    <div class="login-container">
-        <div class="login-box">
-            <h1 class="titulo-container">Jogo da Memória</h1>
-            <input type="text" id="player-name" placeholder="Digite seu nome">
-            <h2>ESCOLHA O NÍVEL:</h2>
-            <div class="buttons">
-                <button class="login-button" onclick="startGame('facil')">Fácil</button>
-                <button class="login-button" onclick="startGame('medio')">Médio</button>
-                <button class="login-button" onclick="startGame('dificil')">Difícil</button>
-            </div><br />
-            <a href="/pages/memory/JogoDaMemoria.html"><button class="login-button">Voltar</button></a>  <!--NOVO BOTÃO ADICOONADO PARA RETORNO DA PÁGINA INICIAL DO JOGO-->
-        </div>
-    </div>
 
-    <!--ranking de pontos-->
+      <!--ranking de pontos-->
+<div class="container-scoreboard">      
 <div class="scoreboard">
     <h2>🏆 Ranking de Pontos</h2>
     <table id="ranking-table">
@@ -72,6 +67,21 @@ window.addEventListener("DOMContentLoaded", carregarRankingPontos);
         </tbody>
     </table>
 </div>
+</div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h1 class="titulo-container">Jogo da Memória</h1>
+            <input type="text" id="player-name" placeholder="Digite seu nome">
+            <h2>ESCOLHA O NÍVEL:</h2>
+            <div class="buttons">
+                <button class="login-button" onclick="startGame('facil')">Fácil</button>
+                <button class="login-button" onclick="startGame('medio')">Médio</button>
+                <button class="login-button" onclick="startGame('dificil')">Difícil</button>
+            </div><br />
+            <a href="/pages/memory/JogoDaMemoria.html"><button class="login-button">Voltar</button></a>  <!--NOVO BOTÃO ADICOONADO PARA RETORNO DA PÁGINA INICIAL DO JOGO-->
+        </div>
+    </div>
 
 
  <footer class="site-footer">

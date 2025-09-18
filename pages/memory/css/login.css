@@ -16,9 +16,10 @@ nav{
   background: #ef9651;
   color: white;
   box-shadow: 4px 8px 1000px rgba(0, 0, 0, 0.9);
-  justify-content: center;
+  justify-content: space-between;
 }
 
+/*RESPNSIVIDADE 768PX*/
 @media(max-width: 768px) {
   nav {
     display: flex;
@@ -32,6 +33,7 @@ nav{
     flex-direction: column;
   }
 }
+
 .btn-nav {
   width: 116px;
   height: 40px;
@@ -241,22 +243,40 @@ nav h2 {
 
 /* Placa fixa no canto superior direito */
 .scoreboard {
-    position: fixed;
-    margin-top: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     flex-direction: column;
-    top: 20px;
-    right: 20px;
-    width: 500px;
+    right: 5px;
+    width: 300px;
     height: 200px;
-    overflow-y: auto;
     background: rgba(0, 0, 0, 0.8);
     padding: 15px;
     border-radius: 12px;
     color: #fff;
-    text-align: center;
     box-shadow: 0 4px 16px rgba(0,0,0,0.4);
-    z-index: 1000;
     transition: transform 0.25s ease, box-shadow 0.3s ease, background 0.4s ease;
+}
+.container-scoreboard{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+
+/*RESPONSIVIDADE SCOREBOARD - 768PX*/
+@media(max-width: 768px) {
+  .container-scoreboard {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 250px;
+  }
 }
 
 /* Hover: cresce e brilha */
@@ -369,5 +389,4 @@ button:hover,
   background-color: #0099ff; /* Cor ao clicar */
   transform: scale(0.95); /* Aperta o botão */
 }
-
 
