@@ -40,7 +40,8 @@
 .team h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #3F7D58;
+  color: #EF9651;
+  margin-top: 5rem;
 }
 
 .team-cards {
@@ -102,4 +103,127 @@
   justify-content: center;
   align-items: center;
   text-align: justify;
+}
+
+/*RESPONSIVIDADE TELA INICIAL - NAVBAR*/
+@media(max-width: 768px) {
+  nav .logo {
+    width: 400px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  nav ul .btn-nav {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .icone {
+    width: 50px;
+  }
+}
+
+/*RESPONSIVIDADE 1200px*/ 
+@media(max-width: 1200px) {
+  nav .logo {
+    width: 400px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  nav ul .btn-nav {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .icone {
+    width: 50px;
+  }
+  .team-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+}
+}
+
+
+/*RESPONSIVIDADE TELA INICIAL - NAVBAR - 1024PX*/
+@media(max-width: 1024px) {
+  nav .logo {
+    width: 400px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+  nav ul .btn-nav {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  .icone {
+    width: 50px;
+  }
+}
+
+/*RESPONSIVIDADE 1024px*/ 
+@media(max-width: 1024px) {
+  nav .logo {
+    width: 400px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+  nav ul .btn-nav {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  .icone {
+    width: 50px;
+  }
+  .team-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+}
 }
