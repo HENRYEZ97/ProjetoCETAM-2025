@@ -113,6 +113,7 @@ body {
   white-space: nowrap;
   border-right: 4px solid #EFEFEF;
   display: inline-block;
+  margin-top: 1.5rem;
 }
 
 @media(max-width: 768px){
