@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
               audioAtual.pause();
               audioAtual.currentTime = 0;
               audioAtual = null;
-            }, 3000);
+            }, 9000);  //Duração do áudio
           
             audioAtual.onended = () => {
               clearTimeout(timeoutAudio);
